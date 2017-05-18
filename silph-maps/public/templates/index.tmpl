@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Silph Maps</title>
   <link rel="stylesheet" type="text/css" href="/index.css{{&key_query}}" />
+  <style>
+    body {
+      background-color: #565656;
+    }
+    .subtitle {
+      color: #fff;
+    }
+    footer {
+      border: none;
+    }
+    a {
+      color: #e4c049;
+      text-decoration: none;
+    }
+    a:hover,
+    a:active,
+    footer a:hover,
+    footer a:active {
+      color: #F1CC55;
+      text-decoration: underline;
+    }
+    .btn:first-child {
+      background: #E4C049;
+      border: 1px solid rgba(0, 0, 0, 0);
+      color: rgba(255, 255, 255, 0.83);
+      text-shadow: 0 0 7px #CF9120;
+      border-radius: 0px;
+    }
+    .btn:first-child:hover {
+      border: 1px solid #E4C049;
+      color: #E4C049;
+      background: none;
+      text-shadow: none;
+    }
+  </style>
   <script>
     function toggle_xyz(id) {
       var el = document.getElementById(id);
@@ -17,7 +52,7 @@
 </head>
 <body>
   <section>
-    <h1 class="title {{#if is_light}}light{{/if}}"><img src="https://assets-lmcrhbacy2s.stackpathdns.com/silph-io/silph-maps.png" alt="Silph Maps" /></h1>
+    <h1 class="title {{#if is_light}}light{{/if}}"><img src="https://assets-lmcrhbacy2s.stackpathdns.com/silph-io/silph-maps-logo.png" alt="Silph Maps" /></h1>
     <h2 class="subtitle">Map tiles for the Silph Road</h2>
     {{#if styles}}
       <h2 class="box-header">Styles</h2>
