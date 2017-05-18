@@ -18,7 +18,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://{v3}"
+      "url": "http://tile.silph.io/data/v3.json"
     }
   },
   "glyphs": "{fontstack}/{range}.pbf",
