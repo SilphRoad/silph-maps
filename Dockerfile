@@ -1,4 +1,5 @@
 FROM klokantech/tileserver-gl:latest
+MAINTAINER Marco Ceppi <marco@thesilphroad.com>
 
 RUN rm -rf /usr/src/app/node_modules/tileserver-gl-styles/styles/*
 
