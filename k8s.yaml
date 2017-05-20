@@ -1,0 +1,72 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: silph-tiles
+  name: silph-tiles
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: silph-tiles
+  strategy: {}
+  minReadySeconds: 10
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: silph-tiles
+        version: "1494816583"
+    spec:
+      containers:
+      - image: silph/silph-tile:v0
+        imagePullPolicy: Always
+        name: silph-tiles
+        ports:
+        - containerPort: 80
+        resources: {}
+        volumeMounts:
+        - mountPath: /data
+          name: data
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: mbtilesv0
+status: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: silph-tiles
+  labels:
+    app: silph-tiles
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: silph-tiles
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+ name: silph-tiles-ingress
+ annotations:
+   kubernetes.io/tls-acme: "true"
+spec:
+ tls:
+   - hosts:
+      - tile.silph.io
+     secretName: tile-tls
+ rules:
+   - host: tile.silph.io
+     http:
+       paths:
+         - path: /
+           backend:
+             serviceName: silph-tiles
+             servicePort: 80
