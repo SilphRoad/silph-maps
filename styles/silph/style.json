@@ -1406,6 +1406,7 @@
           "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
+        "text-transform": "uppercase",
         "visibility": "visible",
         "text-offset": [
           0,
@@ -1488,6 +1489,7 @@
           "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
+        "text-transform": "uppercase",
         "text-max-width": 6,
         "text-size": {
           "stops": [
@@ -1536,6 +1538,7 @@
           "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
+        "text-transform": "uppercase",
         "text-max-width": 10,
         "text-size": {
           "stops": [
@@ -1582,6 +1585,7 @@
           "Klokantech Noto Sans Bold",
           "Klokantech Noto Sans CJK Bold"
         ],
+        "text-transform": "uppercase",
         "text-max-width": 10,
         "text-size": {
           "stops": [
