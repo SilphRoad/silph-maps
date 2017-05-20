@@ -352,7 +352,7 @@
         "text-field": "{housenumber}",
         "text-size": 10,
         "text-font": [
-          "Klokantech Noto Sans Regular",
+          "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ]
       },
@@ -1403,7 +1403,7 @@
       "layout": {
         "text-size": 11,
         "text-font": [
-          "Klokantech Noto Sans Regular",
+          "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
         "visibility": "visible",
@@ -1437,7 +1437,7 @@
         "symbol-placement": "line",
         "text-field": "{name}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
+          "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
         "text-transform": "uppercase",
@@ -1485,7 +1485,7 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
+          "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
         "text-max-width": 6,
@@ -1533,7 +1533,7 @@
       "layout": {
         "text-field": "{name_en}",
         "text-font": [
-          "Klokantech Noto Sans Regular",
+          "TeXGyreAdventor Bold",
           "Klokantech Noto Sans CJK Regular"
         ],
         "text-max-width": 10,

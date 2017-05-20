@@ -1,0 +1,22 @@
+{
+  "name": "silph-maps",
+  "version": "0.0.1",
+  "description": "Silph Maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilphRoad/silph-maps.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SilphRoad/silph-maps/issues"
+  },
+  "homepage": "https://github.com/SilphRoad/silph-maps#readme",
+  "dependencies": {
+    "fontnik": "^0.5.0"
+  }
+}
