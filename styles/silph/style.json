@@ -21,7 +21,7 @@
       "url": "https://maps.silph.io/data/v3.json"
     }
   },
-  "glyphs": "{fontstack}/{range}.pbf",
+  "glyphs": "https://maps.silph.io/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
