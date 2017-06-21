@@ -1042,6 +1042,36 @@
       }
     },
     {
+      "id": "potential_nests",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "grass"
+        ],
+        [
+          "==",
+          "subclass",
+          "park"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgba(249, 133, 44, 1)",
+        "line-offset": -1,
+        "line-gap-width": 0
+      },
+      "minzoom": 10,
+      "layout": {
+        "line-join": "miter",
+        "line-cap": "butt",
+        "visibility": "visible"
+      }
+    },
+    {
       "id": "bridge_minor case",
       "type": "line",
       "source": "openmaptiles",
@@ -1615,35 +1645,6 @@
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 2,
         "text-halo-blur": 0
-      }
-    },
-    {
-      "id": "potential_nests",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "landcover",
-      "filter": [
-        "all",
-        [
-          "==",
-          "class",
-          "grass"
-        ],
-        [
-          "==",
-          "subclass",
-          "park"
-        ]
-      ],
-      "paint": {
-        "line-color": "rgba(249, 133, 44, 1)",
-        "line-offset": -1,
-        "line-gap-width": 0
-      },
-      "minzoom": 10,
-      "layout": {
-        "line-join": "miter",
-        "line-cap": "butt"
       }
     }
   ],
