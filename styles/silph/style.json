@@ -342,7 +342,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "housenumber",
-      "minzoom": 17,
+      "minzoom": 18,
       "filter": [
         "==",
         "$type",
@@ -357,8 +357,8 @@
         ]
       },
       "paint": {
-        "text-color": "hsla(0, 14%, 57%, 0.51)",
-        "text-halo-color": "hsl(39, 41%, 86%)",
+        "text-color": "rgba(210, 210, 210, 1)",
+        "text-halo-color": "rgba(181, 181, 181, 0)",
         "text-halo-width": 0.5
       }
     },
@@ -1448,7 +1448,7 @@
           "stops": [
             [
               10,
-              8
+              10
             ],
             [
               20,
@@ -1456,10 +1456,20 @@
             ]
           ]
         },
-        "text-rotation-alignment": "map"
+        "text-rotation-alignment": "map",
+        "symbol-spacing": 250,
+        "symbol-avoid-edges": true,
+        "text-line-height": 1.2,
+        "text-anchor": "center",
+        "text-padding": 0,
+        "text-keep-upright": true,
+        "text-offset": [
+          0,
+          -0.1
+        ]
       },
       "paint": {
-        "text-color": "#000",
+        "text-color": "rgba(119, 119, 119, 1)",
         "text-halo-color": "hsl(0, 0%, 100%)",
         "text-halo-width": 2
       }
@@ -1605,6 +1615,35 @@
         "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 2,
         "text-halo-blur": 0
+      }
+    },
+    {
+      "id": "potential_nests",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "filter": [
+        "all",
+        [
+          "==",
+          "class",
+          "grass"
+        ],
+        [
+          "==",
+          "subclass",
+          "park"
+        ]
+      ],
+      "paint": {
+        "line-color": "rgba(249, 133, 44, 1)",
+        "line-offset": -1,
+        "line-gap-width": 0
+      },
+      "minzoom": 10,
+      "layout": {
+        "line-join": "miter",
+        "line-cap": "butt"
       }
     }
   ],
