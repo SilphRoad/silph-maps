@@ -5,12 +5,10 @@ pipeline {
       steps {
         sh '''#!/bin/bash
 
+apt update
+apt install docker.io npm
+
 npm install -g dockerfile_lint
-
-sudo apt update
-sudo apt install docker.io
-
-docker version
 
 dockerfile_lint -f Dockerfile'''
       }
